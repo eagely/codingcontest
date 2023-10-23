@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e3c0872-a588-407c-8491-48b0c0e04d29" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.0/40b9c37d8c614f0a5f87bab78da0ca7c771d1395/kotlin-stdlib-1.9.0-sources.jar!/kotlin/Collections.kt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2SpasUytRFmQeLQQ1PegB8LSsvB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eagely/workspace/contest/CodingContest/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
+      <recent name="C:\workspace\CodingContest\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
+      <recent name="C:\workspace\CodingContest\src\main\kotlin\utils\line" />
+      <recent name="C:\workspace\CodingContest\src\main\kotlin" />
+      <recent name="C:\workspace\CodingContest\src" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="solutions.parkgarage" />
+      <recent name="utils.grid" />
+      <recent name="utils.point" />
+      <recent name="utils" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="solutions" />
+      <recent name="" />
+      <recent name="solutions.parkgarage" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CodingContest [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e3c0872-a588-407c-8491-48b0c0e04d29" name="Changes" comment="" />
+      <created>1689846185860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689846185860</updated>
+      <workItem from="1689846186876" duration="1871000" />
+      <workItem from="1689849294152" duration="7223000" />
+      <workItem from="1689920126784" duration="40000" />
+      <workItem from="1689929614913" duration="1726000" />
+      <workItem from="1690383451112" duration="190000" />
+      <workItem from="1690383651621" duration="1877000" />
+      <workItem from="1690443304012" duration="47000" />
+      <workItem from="1690453626530" duration="366000" />
+      <workItem from="1690454000197" duration="16000" />
+      <workItem from="1690454018646" duration="288000" />
+      <workItem from="1690454344262" duration="31000" />
+      <workItem from="1690454398011" duration="9655000" />
+      <workItem from="1690524929637" duration="820000" />
+      <workItem from="1690539889203" duration="2113000" />
+      <workItem from="1690641256633" duration="2939000" />
+      <workItem from="1690646164334" duration="9000" />
+      <workItem from="1690790051162" duration="10973000" />
+      <workItem from="1694060855419" duration="602000" />
+      <workItem from="1694603879021" duration="49000" />
+      <workItem from="1694603998813" duration="35000" />
+      <workItem from="1694604043893" duration="26000" />
+      <workItem from="1694604714805" duration="3682000" />
+      <workItem from="1694628904768" duration="607000" />
+      <workItem from="1694772446215" duration="6000" />
+      <workItem from="1695143406548" duration="1669000" />
+      <workItem from="1695145083097" duration="12000" />
+      <workItem from="1695146477479" duration="5706000" />
+      <workItem from="1695191997098" duration="597000" />
+      <workItem from="1695217649682" duration="7901000" />
+      <workItem from="1695230224463" duration="2669000" />
+      <workItem from="1695314580571" duration="4978000" />
+      <workItem from="1695377922614" duration="3417000" />
+      <workItem from="1695381555274" duration="1231000" />
+      <workItem from="1695474582470" duration="18000" />
+      <workItem from="1695477738688" duration="27000" />
+      <workItem from="1695556643068" duration="19000" />
+      <workItem from="1695557870635" duration="8119000" />
+      <workItem from="1695622133542" duration="27000" />
+      <workItem from="1695666655315" duration="651000" />
+      <workItem from="1695752122140" duration="4022000" />
+      <workItem from="1695984412438" duration="41000" />
+      <workItem from="1696151814070" duration="1848000" />
+      <workItem from="1696671685579" duration="4232000" />
+      <workItem from="1696756231160" duration="33000" />
+      <workItem from="1697276785896" duration="7264000" />
+      <workItem from="1697436131544" duration="100000" />
+      <workItem from="1697734205683" duration="5196000" />
+      <workItem from="1697741428623" duration="272000" />
+      <workItem from="1697741707735" duration="626000" />
+      <workItem from="1697787903248" duration="2344000" />
+      <workItem from="1697790802767" duration="12000" />
+      <workItem from="1697790820939" duration="5169000" />
+      <workItem from="1697803612127" duration="8500000" />
+      <workItem from="1697812287916" duration="5066000" />
+      <workItem from="1697817550191" duration="3626000" />
+      <workItem from="1697910631082" duration="86000" />
+      <workItem from="1697911970719" duration="677000" />
+      <workItem from="1697913259805" duration="3000" />
+      <workItem from="1697913936922" duration="339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
