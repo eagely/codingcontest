@@ -1,28 +1,25 @@
 package utils.line
 
 import utils.point.Point
-import java.math.BigDecimal
-import java.math.MathContext
-import java.math.RoundingMode
+import kotlin.math.*
 
 data class Line(var start: Point, var end: Point) {
 
-    fun distance(): BigDecimal =
-        ((start.x - end.x).pow(2) + (start.y - end.y).pow(2)).sqrt(MathContext(32, RoundingMode.HALF_EVEN))
+    fun distance(): Double = sqrt(((start.x - end.x).toDouble().pow(2) + (start.y - end.y).toDouble().pow(2)))
 
-    fun manhattanDistance(): BigDecimal = (start.x - end.x).abs() + (start.y - end.y).abs()
+    fun manhattanDistance(): Int = abs(start.x - end.x) + abs(start.y - end.y)
 
     private fun orientation(p: Point, q: Point, r: Point): Int {
         val value = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y)
         return when {
-            value > BigDecimal.ZERO -> 1
-            value < BigDecimal.ZERO -> 2
+            value > 0 -> 1
+            value < 0 -> 2
             else -> 0
         }
     }
 
-    fun onSegment(p: Point, q: Point, r: Point): Boolean = q.x <= p.x.max(r.x) && q.x >= p.x.min(r.x) && q.y <= p.y.max(r.y) && q.y >= p.y.min(r.y)
-    fun onSegment(point: Point): Boolean = point.x <= start.x.max(end.x) && point.x >= start.x.min(end.x) && point.y <= start.y.max(end.y) && point.y >= start.y.min(end.y)
+    fun onSegment(p: Point, q: Point, r: Point): Boolean = q.x <= max(p.x, r.x) && q.x >= min(p.x, r.x) && q.y <= max(p.y, r.y) && q.y >= min(p.y, r.y)
+    fun onSegment(point: Point): Boolean = point.x <= max(start.x, end.x) && point.x >= min(start.x, end.x) && point.y <= max(start.y, end.y) && point.y >= min(start.y, end.y)
 
     fun intersects(other: Line): Boolean {
         val o1 = orientation(start, end, other.start)
@@ -45,10 +42,10 @@ data class Line(var start: Point, var end: Point) {
             return point.x == start.x
         }
 
-        val slope = (end.y - start.y) / (end.x - start.x)
-        val expectedY = slope * (point.x - start.x) + start.y
+        val slope = (end.y - start.y).toDouble() / (end.x - start.x).toDouble()
+        val expectedY = (slope * (point.x - start.x)) + start.y
 
-        return point.y == expectedY
+        return point.y.toDouble() == expectedY
     }
 
     override fun toString(): String = "$start..$end"

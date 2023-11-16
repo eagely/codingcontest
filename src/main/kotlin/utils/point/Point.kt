@@ -1,29 +1,92 @@
 package utils.point
 
-import java.math.BigDecimal
+import utils.movement.Direction
+import kotlin.math.abs
+import kotlin.math.absoluteValue
+import kotlin.math.sign
 
-data class Point(var x: BigDecimal, var y: BigDecimal) {
-    constructor(x: Number, y: Number) : this(BigDecimal(x.toString()), BigDecimal(y.toString()))
+data class Point(var x: Int, var y: Int) {
+    constructor(x: Number, y: Number) : this(x.toInt(), y.toInt())
 
-    operator fun plus(other: Point) = Point(x.add(other.x), y.add(other.y))
+    val u: Point get() = Point(x, y + 1)
+    val ur: Point get() = Point(x + 1, y + 1)
+    val r: Point get() = Point(x + 1, y)
+    val dr: Point get() = Point(x + 1, y - 1)
+    val d: Point get() = Point(x, y - 1)
+    val dl: Point get() = Point(x - 1, y - 1)
+    val l: Point get() = Point(x - 1, y)
+    val ul: Point get() = Point(x - 1, y + 1)
+    val sign: Point get() = Point(x.sign, y.sign)
 
-    operator fun unaryPlus() = Point(x.plus(), y.plus())
+    fun isInside(maxX: Int, maxY: Int): Boolean {
+        return x in 0..<maxX && y in 0..<maxY
+    }
 
-    operator fun minus(other: Point) = Point(x.subtract(other.x), y.subtract(other.y))
+    fun getCardinalNeighbors() = setOf(u, r, d, l)
 
-    operator fun unaryMinus() = Point(x.negate(), y.negate())
+    fun getDiagonalNeighbors() = setOf(ur, ul, dr, dl)
 
-    operator fun times(other: Point) = Point(x.multiply(other.x), y.multiply(other.y))
+    fun getNeighbors() = setOf(u, ur, r, dr, d, dl, l, ul)
 
-    operator fun div(other: Point) = Point(x.divide(other.x), y.divide(other.y))
+    fun lineTo(other: Point): List<Point> {
+        val xDelta = (other.x - x).sign
+        val yDelta = (other.y - y).sign
+        return generateSequence(this) { last ->
+            Point(last.x + xDelta, last.y + yDelta).takeIf { it != other }
+        }.toList()
+    }
 
-    operator fun rem(other: Point) = Point(x.remainder(other.x), y.remainder(other.y))
+    fun rotate(degrees: Int = 180): Point {
+        return when (degrees.absoluteValue % 360) {
+            0 -> Point(x, y)
+            90 -> Point(-y, x)
+            180 -> Point(-x, -y)
+            270 -> Point(y, -x)
+            else -> throw IllegalArgumentException("Rotation must be a multiple of 90 degrees")
+        }
+    }
 
-    operator fun inc() = Point(x.add(BigDecimal.ONE), y.add(BigDecimal.ONE))
+    fun invert() = Point(y, x)
 
-    operator fun dec() = Point(x.subtract(BigDecimal.ONE), y.subtract(BigDecimal.ONE))
+    fun getCloserOrEqualPoints(target: Point): Set<Point> =
+        (x - this.manhattanDistance(target) .. x + this.manhattanDistance(target)).flatMap { dx ->
+            (y - this.manhattanDistance(target) .. y + this.manhattanDistance(target)).mapNotNull { dy ->
+                Point(dx, dy).takeIf { it.manhattanDistance(this) <= this.manhattanDistance(target) }
+            }
+        }.toSet()
 
-    operator fun compareTo(other: Point) = (x.add(y)).compareTo(other.x.add(other.y))
+    fun mod(value: Int) = Point(this.x % value, this.y % value)
 
+    fun getCloserPoints(target: Point): Set<Point> =
+        (x - this.manhattanDistance(target) .. x + this.manhattanDistance(target)).flatMap { dx ->
+            (y - this.manhattanDistance(target) .. y + this.manhattanDistance(target)).mapNotNull { dy ->
+                Point(dx, dy).takeIf { it.manhattanDistance(this) < this.manhattanDistance(target) }
+            }
+        }.toSet()
+
+    fun manhattanDistance(other: Point) = abs(x - other.x) + abs(y - other.y)
+    fun gridPlus(other: Direction) = this + other.toPointOnGrid()
+    fun gridMinus(other: Direction) = this - other.toPointOnGrid()
+    operator fun plus(other: Point) = Point(x + other.x, y + other.y)
+    operator fun plus(other: Direction) = this + other.toPoint()
+    operator fun unaryPlus() = Point(+x, +y)
+    operator fun minus(other: Point) = Point(x - other.x, y - other.y)
+    operator fun minus(other: Direction) = this - other.toPoint()
+    operator fun unaryMinus() = Point(-x, -y)
+    operator fun times(other: Point) = Point(x * other.x, y * other.y)
+    operator fun div(other: Point) = Point(x / other.x, y / other.y)
+    operator fun rem(other: Point) = Point(x % other.x, y % other.y)
+    operator fun inc() = Point(x + 1, y + 1)
+    operator fun dec() = Point(x - 1, y - 1)
+    operator fun compareTo(other: Point) = (x + y).compareTo(other.x + other.y)
     override fun toString() = "$x-$y"
+    fun joinToString(separator: String = "-") = "$x$separator$y"
+    fun joinToString(separator: Char = '-') = "$x$separator$y"
+
+    companion object {
+        fun of(input: String): Point {
+            val (x, y) = input.split(',').map { it.trim().toInt() }
+            return Point(x, y)
+        }
+    }
 }

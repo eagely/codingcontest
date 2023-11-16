@@ -58,5 +58,5 @@ abstract class Solution {
 
     fun getOutput(inputFile: File): File = File(inputFile.path.replace(".in", ".out")).apply { createNewFile() }
 
-    abstract fun solve(input: File): String
+    abstract fun solve(input: File): Any
 }

@@ -1,5 +1,3 @@
-
-import utils.Utils.removeTrailingNumbers
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.StandardCopyOption
@@ -7,17 +5,19 @@ import java.util.zip.ZipFile
 
 fun main() {
     unzipInput()
-    val solutions = getSolutions()
+    val solutions = listOf(getSolutions().last())
     var total = 0
     solutions.forEach { solutionInstance ->
         val startTime = System.currentTimeMillis().toInt()
 
         val inputs = solutionInstance.getInput()
-        inputs.forEach { input ->
+        inputs.forEachIndexed { i, input ->
             solutionInstance.solve(input)
-            val output = solutionInstance.solve(input)
+            val output =
+                solutionInstance.solve(input).toString().lineSequence().toMutableList().dropWhile { it.isBlank() }
+                    .dropLastWhile { it.isBlank() }.joinToString("\n")
             solutionInstance.getOutput(input).writeText(output)
-            println("Solution of Level ${solutionInstance.level} (${solutionInstance.javaClass.simpleName.removeTrailingNumbers()}): $output")
+            println("Completed $i")
         }
 
         val endTime = System.currentTimeMillis().toInt()
