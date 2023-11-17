@@ -16,7 +16,8 @@
 ![img.png](images/Contest12.kt.png)
 1. Duplicate `Contest.kt` and rename it to match the new level, such as `Contest1.kt` for Level 1 or `Contest2.kt` for Level 2.
 2. Write your code in the `solve(input: File): String` method.
-3. Utilize `input.rl()` to get a list of strings (trimmed end) or `input.rt()` to get the entire input as a single string (trimmed), depending on the task requirements.
+3. Check out the [utils](src/main/kotlin/utils) package for useful data structures and helper functions.
+4. Utilize `input.rl()` to get a list of strings (trimmed end) or `input.rt()` to get the entire input as a single string (trimmed), depending on the task requirements.
 
 ## How to Run the Code
 ![img.png](images/editconfig.png)
