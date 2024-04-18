@@ -1,3 +1,5 @@
+
+import utils.afterLast
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.StandardCopyOption
@@ -10,14 +12,11 @@ fun main() {
     solutions.forEach { solutionInstance ->
         val startTime = System.currentTimeMillis().toInt()
 
-        val inputs = solutionInstance.getInput()
+        val inputs = solutionInstance.getInput().sorted()
         inputs.forEachIndexed { i, input ->
-            solutionInstance.solve(input)
-            val output =
-                solutionInstance.solve(input).toString().lineSequence().toMutableList().dropWhile { it.isBlank() }
-                    .dropLastWhile { it.isBlank() }.joinToString("\n")
+            val output = solutionInstance.solve(input).toString().lineSequence().toMutableList().dropWhile { it.isBlank() }.dropLastWhile { it.isBlank() }.joinToString("\n")
             solutionInstance.getOutput(input).writeText(output)
-            println("Completed $i")
+            println("Completed ${input.name.afterLast("/")}: $output")
         }
 
         val endTime = System.currentTimeMillis().toInt()

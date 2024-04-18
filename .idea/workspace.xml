@@ -5,91 +5,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3c0872-a588-407c-8491-48b0c0e04d29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jgrapht/alg/shortestpath/Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jgrapht/alg/shortestpath/ConditionalBFSShortestPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jgrapht/alg/shortestpath/ConditionalDijkstraClosestFirstIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jgrapht/alg/shortestpath/ConditionalDijkstraShortestPath.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest1.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest2.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest3.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/computing/IntCode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/geometry/Cuboid.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/Direction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/Instruction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 5.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Level 6.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_0.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_0.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_0.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_0.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_1.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_2.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_3.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_4.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level4/level4_5.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level5/level5_5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_0.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level6/level6_5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Jim.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Helper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/graph/GraphUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/graph/Vertex.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/grid/ArbitraryGrid.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/grid/HexGrid.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/HexDirection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/PathFinding.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/VerticalHexDirection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/point/ArbitraryPoint.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/point/LongPoint.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/point/LongPoint3D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/02-Rectangle.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/03-Area.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/04-Pockets-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/04-Pockets.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Solution.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solutions/Contest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Utils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/computing/IntCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/geometry/Cuboid.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/grid/Grid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/grid/Grid.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/grid/Grid3D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/grid/Grid3D.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/line/Line.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/line/Line.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/movement/Direction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/movement/Direction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/movement/Instruction.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/point/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/point/Point.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/point/Point3D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/point/Point3D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Level 6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_0.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_1.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_1.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_2.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_2.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_3.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_3.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_3.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_4.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_4.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_4.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_5.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_5.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level1/level1_5.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level1/level1_5.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_0.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_1.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_1.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_2.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_2.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_3.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_3.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_3.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_4.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_4.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_4.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_5.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_5.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level2/level2_5.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level2/level2_5.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_0.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_1.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_1.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_2.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_2.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_2.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_3.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_3.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_3.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_4.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_4.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_4.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_5.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_5.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level3/level3_5.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/level3/level3_5.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_0.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level4/level4_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level5/level5_5.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_0.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_1.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_2.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_3.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_4.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/level6/level6_5.in" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,12 +148,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubPullRequestsUISettings">{}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.0/40b9c37d8c614f0a5f87bab78da0ca7c771d1395/kotlin-stdlib-1.9.0-sources.jar!/kotlin/Collections.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="KubernetesApiProvider">{}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -154,16 +177,20 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.CodingContest [run].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eagely/workspace/codingcontest/src/main/resources/level4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eagely/workspace/CodingContest&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
@@ -172,22 +199,27 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/home/eagely/.gradle&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/level4" />
-      <recent name="$PROJECT_DIR$/src/main/resources/level3" />
-      <recent name="$PROJECT_DIR$/src/main/resources/level2" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/solutions" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources/level4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/level4" />
       <recent name="$PROJECT_DIR$/src/main/resources/level5" />
       <recent name="$PROJECT_DIR$/src/main/resources/level6" />
-      <recent name="$PROJECT_DIR$/src/main/resources/level3" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="" />
@@ -225,6 +257,14 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -296,6 +336,19 @@
       <workItem from="1700059818201" duration="3954000" />
       <workItem from="1700070357455" duration="3510000" />
       <workItem from="1700136812160" duration="3113000" />
+      <workItem from="1700143328260" duration="833000" />
+      <workItem from="1702140387531" duration="989000" />
+      <workItem from="1704377593656" duration="3088000" />
+      <workItem from="1704444520301" duration="610000" />
+      <workItem from="1704465734114" duration="24000" />
+      <workItem from="1708251496348" duration="77000" />
+      <workItem from="1708252752979" duration="18000" />
+      <workItem from="1709460084370" duration="4763000" />
+      <workItem from="1709464858950" duration="22000" />
+      <workItem from="1709473091731" duration="14000" />
+      <workItem from="1713457589381" duration="12000" />
+      <workItem from="1713457622063" duration="9000" />
+      <workItem from="1713460938035" duration="1342000" />
     </task>
     <servers />
   </component>

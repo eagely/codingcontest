@@ -1,8 +1,8 @@
 package utils.point
 
 import utils.movement.Direction
+import utils.pm
 import kotlin.math.abs
-import kotlin.math.absoluteValue
 import kotlin.math.sign
 
 data class Point(var x: Int, var y: Int) {
@@ -16,17 +16,20 @@ data class Point(var x: Int, var y: Int) {
     val dl: Point get() = Point(x - 1, y - 1)
     val l: Point get() = Point(x - 1, y)
     val ul: Point get() = Point(x - 1, y + 1)
-    val sign: Point get() = Point(x.sign, y.sign)
+    val sign: Point get() = normalized
+    val normalized: Point get() = Point(x.sign, y.sign)
 
     fun isInside(maxX: Int, maxY: Int): Boolean {
         return x in 0..<maxX && y in 0..<maxY
     }
 
-    fun getCardinalNeighbors() = setOf(u, r, d, l)
+    fun getCardinalNeighbors(): Set<Point> {
+        return setOf(u, r, d, l)
+    }
 
-    fun getDiagonalNeighbors() = setOf(ur, ul, dr, dl)
-
-    fun getNeighbors() = setOf(u, ur, r, dr, d, dl, l, ul)
+    fun getNeighbors(): Set<Point> {
+        return setOf(u, ur, r, dr, d, dl, l, ul)
+    }
 
     fun lineTo(other: Point): List<Point> {
         val xDelta = (other.x - x).sign
@@ -37,7 +40,7 @@ data class Point(var x: Int, var y: Int) {
     }
 
     fun rotate(degrees: Int = 180): Point {
-        return when (degrees.absoluteValue % 360) {
+        return when (degrees pm 360) {
             0 -> Point(x, y)
             90 -> Point(-y, x)
             180 -> Point(-x, -y)
@@ -64,6 +67,25 @@ data class Point(var x: Int, var y: Int) {
             }
         }.toSet()
 
+    fun toDirection(): Direction {
+        return when {
+            x == 0 && y == 1 -> Direction.NORTH
+            x == 0 && y == -1 -> Direction.SOUTH
+            x == 1 && y == 0 -> Direction.EAST
+            x == -1 && y == 0 -> Direction.WEST
+            else -> throw IllegalArgumentException("Point $this is not a direction")
+        }
+    }
+    fun toDirectionOnGrid(): Direction {
+        return when {
+            x == -1 && y == 0 -> Direction.NORTH
+            x == 1 && y == 0 -> Direction.SOUTH
+            x == 0 && y == 1 -> Direction.EAST
+            x == 0 && y == -1 -> Direction.WEST
+            else -> throw IllegalArgumentException("Point $this is not a direction")
+        }
+    }
+    infix fun pm(other: Point) = this % other
     fun manhattanDistance(other: Point) = abs(x - other.x) + abs(y - other.y)
     fun gridPlus(other: Direction) = this + other.toPointOnGrid()
     fun gridMinus(other: Direction) = this - other.toPointOnGrid()
@@ -74,18 +96,36 @@ data class Point(var x: Int, var y: Int) {
     operator fun minus(other: Direction) = this - other.toPoint()
     operator fun unaryMinus() = Point(-x, -y)
     operator fun times(other: Point) = Point(x * other.x, y * other.y)
+    operator fun times(other: Int) = Point(x * other, y * other)
     operator fun div(other: Point) = Point(x / other.x, y / other.y)
-    operator fun rem(other: Point) = Point(x % other.x, y % other.y)
+    operator fun rem(other: Point) = Point(x pm other.x, y pm other.y)
+    operator fun rem(other: Int) = Point(x pm other, y pm other)
     operator fun inc() = Point(x + 1, y + 1)
     operator fun dec() = Point(x - 1, y - 1)
     operator fun compareTo(other: Point) = (x + y).compareTo(other.x + other.y)
-    override fun toString() = "$x-$y"
-    fun joinToString(separator: String = "-") = "$x$separator$y"
-    fun joinToString(separator: Char = '-') = "$x$separator$y"
+    override fun toString() = "($x, $y)"
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Point
+
+        if (x != other.x) return false
+        if (y != other.y) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = x
+        result = 31 * result + y
+        return result
+    }
 
     companion object {
+        val ORIGIN = Point(0, 0)
         fun of(input: String): Point {
-            val (x, y) = input.split(',').map { it.trim().toInt() }
+            val (x, y) = input.split(',', '-', ' ').map { it.trim().toInt() }
             return Point(x, y)
         }
     }
